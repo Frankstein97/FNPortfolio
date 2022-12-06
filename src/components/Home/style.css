@@ -1,0 +1,210 @@
+/* Home section */
+/* --------- */
+
+.wave {
+    animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.1s; /* Change to speed up or slow down */
+    animation-iteration-count: infinite; /* Never stop waving :) */
+    transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+    display: inline-block;
+  }
+  
+  @keyframes wave-animation {
+    0% {
+      transform: rotate(0deg);
+    }
+    10% {
+      transform: rotate(14deg);
+      
+    } /* The following five values can be played with to make the waving more or less extreme */
+    20% {
+      transform: rotate(-8deg);
+    }
+    30% {
+      transform: rotate(14deg);
+    }
+    40% {
+      transform: rotate(-4deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+    60% {
+      transform: rotate(0deg);
+    } /* Reset for the last half to pause */
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+.home-header {
+  padding-top: 30px ;
+}
+
+.home-section {
+/*   
+  --image-gradient: linear-gradient(
+    to bottom left,
+    rgba(229, 114, 119, 0.678),
+    rgba(40, 49, 210, 0.648)
+  ); */
+  position: relative;
+  z-index: -1;
+  background-image: 
+  /* var(--image-gradient),  */
+  url(https://img.freepik.com/vector-gratis/conjunto-iconos-nubes-blancas-dibujos-animados-aislado-azul_90220-262.jpg?w=740&t=st=1669689992~exp=1669690592~hmac=73bc1164ead75bcda0f61f167faa81a0536b5c311f1e164c7b2bcb91a83bdf7e);
+  background-position: top center;
+  background-repeat: no-repeat;
+  padding-bottom: 30px ;
+  padding-top: 30px ;
+  background-color: #8fecec ;
+}
+.home-section2 {
+  position: relative;
+  /* z-index: -1103; */
+  background-color: #2f3c3c ;
+  /* background-image: var(--image-gradient) url(https://i.pinimg.com/originals/d9/42/37/d94237b8bef74f4f024d93d714fc8780.png); */
+  background-position: top center;
+  background-repeat: no-repeat;
+  padding-bottom: 30px ;
+  padding-top: 30px ;
+  padding: 0.5rem 0 2rem ;
+  color: whitesmoke;
+  text-align: left;
+}
+.type {
+
+  padding: 3rem;
+  text-align: left; 
+}
+.heading {
+    padding-bottom: 2rem ;
+  font-size: 2.4em ;
+  /* padding-left: 50px ; */
+}
+
+.heading-name {
+  text-align: center;
+  font-size: 2.8rem;
+  padding: 1rem 0px;
+}
+
+.main-name {
+  color: #207373;
+}
+
+.Typewriter__wrapper {
+  font-size: 2.2em ;
+  color: #268C82 ;
+  font-weight: 600 ;
+}
+.Typewriter__cursor {
+  font-size: 2.4em ;
+  color: #268C82 ;
+}
+
+@media (max-width: 767px) {
+  .Typewriter__wrapper {
+    font-size: 1.4em ;
+    font-weight: 500 ;
+    position: absolute ;
+  }
+  .Typewriter__cursor {
+    display: none ;
+  }
+}
+
+.myAvtar {
+  justify-content: center ;
+  padding-top: 9em ;
+}
+
+@media (max-width: 767px) {
+  .myAvtar {
+    padding-top: 2em ;
+    padding-bottom: 2em ;
+  }
+}
+
+.home-about-section {
+  position: relative;
+  padding-bottom: 70px ;
+  padding-top: 70px ;
+}
+
+.home-about-description {
+  color: white ;
+  padding-bottom: 20px ;
+  text-align: center;
+}
+.home-about-description h1 {
+    font-size: 2.6rem;
+}
+
+.home-about-body {
+  padding-top: 50px;
+  font-size: 1.2em ;
+  text-align: left;
+}
+
+.home-about-social {
+  text-align: center ;
+  padding-top: 25px;
+  color: white ;
+  padding-bottom: 20rem;
+}
+
+.home-about-social-links {
+  justify-content: center ;
+  padding-top: 15px ;
+  display: inline-block ;
+  position: relative ;
+  padding-inline-start: 0 ;
+}
+
+.home-social-icons {
+  position: relative ;
+  display: inline-block ;
+  width: 40px ;
+  height: 40px ;
+  text-align: center ;
+  font-size: 1.2em ;
+  line-height: 2em ;
+  background: rgba(255, 255, 255, 0.972) ;
+  border-radius: 50% ;
+  transition: 0.5s ;
+}
+
+.home-social-icons::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #FB005B;
+  transition: 0.5s;
+  transform: scale(0.9);
+  z-index: -1;
+}
+
+.home-social-icons:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #FB005B;
+}
+
+.home-social-icons:hover {
+  color: #FB005B;
+  box-shadow: 0 0 5px #FB005B;
+  text-shadow: 0 0 2px #FB005B;
+}
+
+.social-icons {
+  display: inline-block ;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.icon-colour {
+  color: #FB005B ;
+}

@@ -1,0 +1,141 @@
+
+/* Navbar Section  */
+/* --------- */
+.sticky {
+    background-color: #000D0C ;
+    transition: all 0.3s ease-out 0s;
+    box-shadow: 0px 10px 10px 0px #207373;
+    backdrop-filter: blur(15px);
+  }
+  
+  .navbar {
+    position: fixed;
+    transition: all 0.3s ease-out 0s;
+    padding: 0.3rem 2rem;   
+    border-top: 2px solid gray;
+  }
+  
+  .navbar-toggler {
+    position: relative;
+    background-color: transparent;
+    border-color: transparent;
+    border-top: 2px solid gray;
+  }
+  
+  .navbar-toggler span {
+    display: block ;
+    background-color: #207373;
+    height: 4px ;
+    width: 27px ;
+    margin-top: 5px ;
+    margin-bottom: 5px ;
+    transform: rotate(0deg) ;
+    left: 0 ;
+    opacity: 1 ;
+  }
+  
+  .navbar-toggler:focus,
+  .navbar-toggler:active {
+    outline: 0;
+  }
+  
+  .navbar-toggler span:nth-child(1),
+  .navbar-toggler span:nth-child(3) {
+    transition: transform 0.35s ease-in-out ;
+    transition: transform 0.35s ease-in-out;
+  }
+  
+  .navbar-toggler:not(.collapsed) span:nth-child(1) {
+    position: absolute;
+    left: 12px ;
+    top: 10px ;
+    transform: rotate(135deg);
+    opacity: 0.9 ;
+  }
+  
+  .navbar-toggler:not(.collapsed) span:nth-child(2) {
+    height: 12px ;
+    visibility: hidden ;
+    background-color: transparent;
+  }
+  
+  .navbar-toggler:not(.collapsed) span:nth-child(3) {
+    position: absolute ;
+    left: 12px ;
+    top: 10px;
+    transform: rotate(-135deg);
+    opacity: 0.9 ;
+  }
+  
+  @media (max-width: 767px) {
+    .navbar {
+      font-size: 1.2rem ;
+      bottom: 50px !important;
+      padding: 0.6rem 0.2em !important;
+      font-size: 1.3rem !important;
+      background-color: #000D0C !important;
+      margin-top: solid 31px red;
+    }
+    .navbar-nav .nav-item a::after {
+      display: none;
+      color: #207373;
+      
+    }
+  }
+  .nav-link {
+    padding: 0.8rem 1rem ;
+  }
+  
+  @media (max-width: 767px) {
+    .nav-link {
+      padding: 0.7rem 1rem;
+    }
+  }
+  
+  .navbar-nav .nav-item {
+    position: relative;
+    margin: 10px 5px;
+   
+    text-align: initial;
+
+  }
+  
+  .navbar-nav .nav-item a {
+    text-decoration: none;
+    font-weight: 400;
+    transition: all 0.3s ease-out 0s;
+    position: relative;
+    z-index: 1;
+    color: white;
+    width: 130px;
+  }
+  
+  .navbar-nav .nav-item a::after {
+    content: "";
+    position: relative;
+    display: block;
+    height: 5px;
+    width: 0;
+    border-radius: 16px;
+    background: #207373;
+    bottom: 1px;
+    left: 0;
+    z-index: -1;
+    transition: all 0.3s ease-out 0s;
+  }
+  
+  .navbar-nav .nav-item a:hover::after {
+    width: 100%;
+  }
+  .container {
+  padding: 0px !important;
+  
+  }
+
+  .resume_button {
+    width: 7rem; 
+    border: 0px;
+    border-bottom: 3px solid #268C82 ;
+    max-width: 250px;
+    margin: -10px 10px 0px 15px;
+    }

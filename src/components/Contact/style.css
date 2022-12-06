@@ -1,0 +1,133 @@
+/* --------- */
+/* Contact */
+/* --------- */
+form{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .formTotal {
+    position: relative;
+    /* z-index: -1; */
+    background-color: #2f3c3c ;
+    /* background-image: var(--image-gradient) url(https://i.pinimg.com/originals/d9/42/37/d94237b8bef74f4f024d93d714fc8780.png); */
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    margin-left: 50px;
+  }
+  
+  .formTotal > h1{
+    margin-bottom: 15px;
+    font-size: 2.6rem;
+    color:white
+  }
+  section{
+    width: 500px;
+    box-shadow: #000303 1.95px 1.95px 1.6px;
+
+    background-color: #207373;
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+  }
+  label{
+    color: #000303;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    padding:10px 0 10px 0;
+    
+  }
+  label input  {
+    padding: 10px;
+    font-size: 16px;
+  }
+  .msg textarea {
+    box-shadow:#000303 1.95px 1.95px 2.6px;
+    height: 32vh;
+    font-size: 14px;
+   }::placeholder {
+    padding: 6px;
+    color: #217379;
+    font-size: 14px;
+  }
+   .contact-form label {
+     margin:2px 5px;
+     display: block;
+   }
+  
+  #name,
+  #email{
+    display: flex;
+    font-family: sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+    flex-direction: column;
+    height: 30px;
+    background-color: #7DD2B8;
+    color: #000303;
+    border: none;
+    width: 100%;
+    box-shadow: #000303 1.95px 1.95px 2.6px;
+
+    
+  }
+  
+  #message{
+    background-color: #7DD2B8;
+    font-family: sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+    color: #000303;
+    border: none;
+    padding: 10px;
+    /* display: flex; */
+    flex-direction: column;
+    width: 100%;
+    
+  }
+  
+  .boton-submit{
+    width: 100%;
+    margin-top: 10px;
+    background-color: #FB005B;
+    border: 1px solid #000303;
+    box-shadow: 2px 2px 2px 1px #000303;
+    color: white;
+    font-size: 16px;
+    padding: 5px 0 5px 0;
+  }
+  
+  @media (max-width: 700px) {
+    .formTotal{
+      width: 100%;
+      margin: 0px auto;
+    }
+  }
+  
+  @media (max-width: 500px){
+    .formTotal > h1 {
+        font-size: 2.5rem;
+    }
+    section{
+        width: 90vw;
+        margin-bottom: 10px;
+    }
+  
+    .msg textarea {
+     height: 32vh;
+     font-size: 16px;
+    }
+    .contact-form label {
+      margin:2px 5px;
+      /* display: block; */
+    }
+  }
+  
+  .formTotal{
+    background-color: #2C3333;
+  }
+  
+  
+  

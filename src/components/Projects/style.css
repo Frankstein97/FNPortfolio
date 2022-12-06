@@ -1,0 +1,112 @@
+
+/* --------- */
+/* Projects */
+/* --------- */
+  
+.project-section {
+  text-align: center;
+    position: relative;
+    padding: 2rem 1rem 5rem 1rem;
+    background-color: #2F3C3C;
+    /* background-image: var(--section-background-color); */
+  }
+  
+  .project-card {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+    height: auto;
+  }
+  
+  .project-card-view {
+    padding: 15px;
+    box-shadow: 2px 2px 2px 2px rgba(195, 230, 112, 0.603) !important;
+    color: rgb(0, 0, 0);
+    background-color: #207373!important;
+    opacity: 0.9;
+    transition: all 0.5s ease 0s;
+    height: 100%;
+    box-shadow: #000303 1.95px 1.95px 1.6px;
+    border-radius: 20px !important;
+  }
+
+  .project-card-view:hover {
+    transform: scale(1.02);
+    overflow: hidden;
+    box-shadow: 0 4px 4px 5px rgba(0, 0, 0, 0.689)!important;
+  }
+  
+  .blog-card {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+    height: auto;
+  }
+  
+  .blog-card-view {
+    background-color: transparent;
+    box-shadow: 0 3px 3px 2px rgba(145, 77, 161, 0.459);
+    color: white;
+    transition: all 0.5s ease 0s;
+    height: 100%;
+  }
+  
+  .blog-link {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .blog-link:hover {
+    cursor: pointer;
+  }
+  
+  .blog-card-view:hover {
+    transform: scale(1.02);
+    overflow: hidden;
+    box-shadow: 0 3px 3px 5px rgba(155, 88, 173, 0.65);
+  }
+  
+  .card-img-top {
+    padding: 20px;
+    opacity: 0.8;
+    border-radius: 10px;
+  }
+  
+  .blog-img {
+    padding: 0px;
+    opacity: 0.8;
+    border-radius: 0px;
+  }
+  
+  .btn-primary {
+    color: #fff;
+    background-color: #207373;
+    border-color: #207373;
+  }
+  
+  .btn-primary:hover {
+    color: rgb(0, 0, 0);
+    background-color: #FFEC10;
+    border-color: #FFEC10;
+    
+  }
+  .btn:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  .project-heading {
+    color: white;
+    font-size: 2.3em;
+    font-weight: 500;
+    padding-top: 10px;
+  }
+
+
+   .prueba{
+    border-radius: 5%;
+    border:solid 1px black;
+    background: rgb(101,111,102);
+background: linear-gradient(122deg, rgba(101,111,102,0.9419117988992471) 8%, rgba(63,73,63,0.9531162806919643) 48%, rgba(86,93,89,1) 100%);
+}
