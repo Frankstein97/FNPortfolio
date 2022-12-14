@@ -99,14 +99,13 @@ form{
     padding: 5px 0 5px 0;
   }
   
-  @media (max-width: 700px) {
     .formTotal{
       width: 100%;
       margin: 0px auto;
+      background-color: #2C3333;
     }
-  }
   
-  @media (max-width: 500px){
+  
     .formTotal > h1 {
         font-size: 2.5rem;
     }
@@ -123,11 +122,17 @@ form{
       margin:2px 5px;
       /* display: block; */
     }
+  
+  
+  
+  @media (min-width: 767px) {
+    .formTotal {
+      height: 100vh
+    }
+    .contact-form {
+      width: 70vh;
+    }
+    .msg textarea {
+      height: 12vh
+    }
   }
-  
-  .formTotal{
-    background-color: #2C3333;
-  }
-  
-  
-  

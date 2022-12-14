@@ -1,8 +1,7 @@
 import React from "react";
 import "./style.css";
 import emailjs from "@emailjs/browser";
-import Swal from 'sweetalert2'
-
+import Swal from "sweetalert2";
 
 const Contact = () => {
   const sendEmail = (e) => {
@@ -17,10 +16,9 @@ const Contact = () => {
       )
       .then(
         (reject) => {
-            Swal.fire (
+          Swal.fire(
             "Gracias por enviarme un mensajito!!",
-            "En cuanto lo lea intentare contestarlo.",
-            
+            "En cuanto lo lea intentare contestarlo."
           );
         },
         (error) => {
@@ -32,8 +30,8 @@ const Contact = () => {
   return (
     <div className="formTotal ">
       <h1>
-              CONTACT<span className="purple">AME!</span> 
-            </h1>
+        CONTACT<span className="purple">AME!</span>
+      </h1>
       <section className="contact-form">
         <form onSubmit={sendEmail}>
           <div>

@@ -1,4 +1,3 @@
-
 import "./style.css";
 import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
@@ -41,18 +40,16 @@ function NavBar() {
     >
       <Container>
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ms-auto" defaultActiveKey="#home">
-            <Nav.Item className="fork-btn">
+          <Nav defaultActiveKey="#home">
+            {/* <Nav.Item className="fork-btn">
               <Button
                 href="https://github.com/Frankstein97"
                 target="_blank"
-                className="fork-btn-inner"
+                className="fork-btn-inner"  
               >
                 <GoMarkGithub style={{ fontSize: "1.2em" }} /> github
-                {/* <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
-                <AiFillStar style={{ fontSize: "1.1em" }} /> */}
               </Button>
-            </Nav.Item>
+            </Nav.Item> */}
             <Nav.Item>
               <NavLink as={Link} to="/" onClick={() => updateExpanded(false)}>
                 <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
@@ -65,7 +62,7 @@ function NavBar() {
                 to="/about"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> SobreMy
+                <AiOutlineUser style={{ marginBottom: "2px" }} /> Sobre
               </NavLink>
             </Nav.Item>
 
@@ -92,6 +89,7 @@ function NavBar() {
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>
+        
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
           onClick={() => {
@@ -102,16 +100,16 @@ function NavBar() {
           <span></span>
           <span></span>
         </Navbar.Toggle>
-        <Button
-          className="resume_button"
-          variant="primary"
-          href={pdf}
-          target="_blank"
-          style={{ maxWidth: "250px" }}
-        >
-          <AiOutlineDownload />
-          &nbsp;Resumen
-        </Button>
+          <Button
+            className="resume_button"
+            variant="Link"
+            href={pdf}
+            target="_blank"
+            
+          >
+            <AiOutlineDownload />
+            &nbsp;Resumen
+          </Button>
         {/* </Row> */}
       </Container>
     </Navbar>

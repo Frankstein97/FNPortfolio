@@ -1,103 +1,122 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import Aboutcard from "../About/Aboutcard";
-import logobailando from "../../assets/logobailando.gif";
 import "./style.css";
+import { Container } from "react-bootstrap";
+import logobailando from "../../assets/logobailando.gif";
+// Tendria que ver como achicar esto de las imagenes
+import html from "../../assets/icons/html.png";
+import css from "../../assets/icons/css.png";
+import javascript from "../../assets/icons/javascript.png";
+import react from "../../assets/icons/react.png";
+import angular from "../../assets/icons/angular.png";
+import docker from "../../assets/icons/docker.png";
+import figma from "../../assets/icons/figma.png";
+import firebase from "../../assets/icons/firebase.png";
+import jira from "../../assets/icons/jira.png";
+import mongodb from "../../assets/icons/mongodb.png";
+import node from "../../assets/icons/node.png";
+import npm from "../../assets/icons/npm.png";
+import sql from "../../assets/icons/sql.png";
+import postman from "../../assets/icons/postman.png";
+import vue from "../../assets/icons/vue.png";
+
 
 function About() {
   return (
     <Container fluid className="about-section">
-      <Row style={{ justifyContent: "center", padding: "10px" }}>
-        <Col md={7}>
-          <h1 className="about_title">
-            Quien <strong className="purple">Soy</strong>
-          </h1>
-          <Aboutcard />
-        </Col>
-        <Col md={5} className="about-img">
-          <img
-            src={logobailando}
-            alt="about"
-            className="img-fluid"
-            width={"100 px"}
-          />
-        </Col>
-      </Row>
-      <h2 className="project-heading">
-        <strong className="purple"> Skills </strong>
-      </h2>
-      <ul className="badges">
-        <li style={{ backgroundColor: "rgb(227 79 38)" }}>
-          <img
-            src={
-              "https://img.shields.io/badge/-HTML5-E34F26?logo=html5&logoColor=white&style=flat-square"
-            }
-            alt="HTML"
-          />
-        </li>
-        <li style={{ backgroundColor: "rgb(21 114 182)" }}>
-          <img
-            src={
-              "https://img.shields.io/badge/-CSS-1572B6?logo=CSS3&logoColor=white&style=flat-square"
-            }
-            alt="CSS"
-          />
-        </li>
-        <li style={{ backgroundColor: "rgb(247 223 30)" }}>
-          <img
-            src={
-              "https://img.shields.io/badge/-JavaScript-F7DF1E?logo=JavaScript&logoColor=white&style=flat-square"
-            }
-            alt="JavaScript"
-          />{" "}
-        </li>
-        <li style={{ backgroundColor: "rgb(49 120 198)" }}>
-          <img
-            src={
-              "https://img.shields.io/badge/-TypeScript-3178C6?logo=TypeScript&logoColor=white&style=flat-square"
-            }
-            alt="TypeScript"
-          />
-        </li>
-      </ul>
-      <h2 className="project-heading">
-        <strong className="purple">Herra</strong> 
-        mientas
-      </h2>
-      <ul className="badges">
-        <li style={{ backgroundColor: "#31A8FF" }}>
-          <img
-            src={
-              "https://img.shields.io/badge/-Photoshop-31A8FF?logo=Adobe-Photoshop&logoColor=white&style=flat-square"
-            }
-            alt="Photoshop"
-          />
-        </li>
-        <li style={{ backgroundColor: "#0052CC" }}>
-          <img
-            src={
-              "https://img.shields.io/badge/-Jira-0052CC?logo=Jira&logoColor=white&style=flat-square"
-            }
-            alt="Jira"
-          />
-        </li>
-        <li style={{ backgroundColor: "#F24E1E" }}>
-          <img
-            src={
-              "https://img.shields.io/badge/-Figma-F24E1E?logo=Figma&logoColor=white&style=flat-square"
-            }
-            alt="Figma"
-          />
-        </li>
-        <li style={{ backgroundColor: "#FF6C37" }}>
-          <img
-            src={
-              "https://img.shields.io/badge/-Postman-FF6C37?logo=Postman&logoColor=white&style=flat-square"
-            }
-            alt="Postman"
-          />
-        </li>
-      </ul>
+      <div className="section">
+        <h1 className="about_title">
+          Quien <strong className="purple">Soy</strong>
+        </h1>
+        <div className="quote-card-view">
+          <div className="about-text">
+            <p style={{ textAlign: "justify" }}>
+              Soy un Argentino, viviendo en{" "}
+              <span className="purple"> Buenos Aires </span>
+              <br />
+              Tengo dos gatos que son parte de mi familia, Fausto y Ray. plantas
+              y andar en bicicleta. Tambien me gusta el ciber-punk y las
+              peliculas de estudios ghibli.
+              <br />
+              <br />
+              Mi interes por programar comenzo en 2020. Y desde ese año estoy
+              practicando y realizando bootcamps para fomentar mi aprendizaje.
+              <br />
+            </p>
+          </div>
+          <div className="logobailando">
+            <img
+              src={logobailando}
+              alt="about"
+              className="img-fluid"
+              width={"100px"}
+            />
+          </div>
+        </div>
+      </div>
+      <div className="section">
+        <h2 className="project-heading">
+          <strong className="purple"> SKILLS </strong>
+        </h2>
+        <ul className="icons-list">
+          <li>
+            <img src={html} alt="html" className="icons" />
+          </li>
+          <li >
+            <img src={css} alt="css" className="icons" />
+          </li>
+          <li >
+            <img src={javascript} alt="javascript" className="icons" />
+          </li>
+          <li>
+            <img src={react} alt="react" className="icons" />
+          </li>
+          <li>
+            <img src={firebase} alt="firebase" className="icons" />
+          </li>
+          <li>
+            <img src={npm} alt="firebase" className="npm" />
+          </li>
+          <br />
+          <li>
+            <img src={postman} alt="postman" className="icons" />
+          </li>
+          <li>
+            <img src={jira} alt="jira" className="icons" />
+          </li>
+          <li>
+            <img src={figma} alt="react" className="icons" />
+          </li>
+        </ul>
+</div>
+<div className="section">
+
+        <h2 className="project-heading">
+          <strong className="purple">Sigo</strong>
+          aprendiendo
+        </h2>
+        <ul className="icons-list">
+          <li>
+            <img src={sql} alt="sql" className="icons" />
+          </li>
+          <li >
+            <img src={mongodb} alt="mongodb" className="icons" />
+          </li>
+          <li>
+            <img src={docker} alt="docker" className="icons" />
+          </li>
+          </ul>
+          <ul className="icons-list">
+          <li >
+            <img src={vue} alt="vue" className="icons" />
+          </li>
+          <li>
+            <img src={node} alt="nodejs" className="icons" />
+          </li>
+          <li >
+            <img src={angular} alt="angular" className="icons" />
+          </li>
+        </ul>
+      </div>
     </Container>
   );
 }

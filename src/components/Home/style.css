@@ -41,22 +41,15 @@
 }
 
 .home-section {
-/*   
-  --image-gradient: linear-gradient(
-    to bottom left,
-    rgba(229, 114, 119, 0.678),
-    rgba(40, 49, 210, 0.648)
-  ); */
   position: relative;
   z-index: -1;
   background-image: 
-  /* var(--image-gradient),  */
   url(https://img.freepik.com/vector-gratis/conjunto-iconos-nubes-blancas-dibujos-animados-aislado-azul_90220-262.jpg?w=740&t=st=1669689992~exp=1669690592~hmac=73bc1164ead75bcda0f61f167faa81a0536b5c311f1e164c7b2bcb91a83bdf7e);
   background-position: top center;
   background-repeat: no-repeat;
   padding-bottom: 30px ;
   padding-top: 30px ;
-  background-color: #8fecec ;
+  background-color: #2f3c3c ;
 }
 .home-section2 {
   position: relative;
@@ -71,11 +64,7 @@
   color: whitesmoke;
   text-align: left;
 }
-.type {
 
-  padding: 3rem;
-  text-align: left; 
-}
 .heading {
     padding-bottom: 2rem ;
   font-size: 2.4em ;
@@ -91,44 +80,45 @@
 .main-name {
   color: #207373;
 }
+.type {
 
+  padding: 3rem 2rem  ; 
+  text-align: left; 
+}
 .Typewriter__wrapper {
-  font-size: 2.2em ;
+  position: absolute ;
+  font-size: 1.5rem ;
   color: #268C82 ;
-  font-weight: 600 ;
+  font-weight: 500 ;
+
 }
 .Typewriter__cursor {
-  font-size: 2.4em ;
-  color: #268C82 ;
+  display: none ;
+  /* font-size: 1.8rem ;
+  color: #268C82 ; */
 }
 
-@media (max-width: 767px) {
-  .Typewriter__wrapper {
-    font-size: 1.4em ;
-    font-weight: 500 ;
-    position: absolute ;
-  }
-  .Typewriter__cursor {
-    display: none ;
-  }
-}
+.home-pic { padding-bottom: 20px;
+   text-align: center; }
+
 
 .myAvtar {
   justify-content: center ;
   padding-top: 9em ;
 }
 
-@media (max-width: 767px) {
+
   .myAvtar {
     padding-top: 2em ;
     padding-bottom: 2em ;
   }
-}
+
 
 .home-about-section {
   position: relative;
-  padding-bottom: 70px ;
-  padding-top: 70px ;
+  width: 100%;
+  height:auto;
+  padding: 6rem 6rem;
 }
 
 .home-about-description {
@@ -150,9 +140,14 @@
   text-align: center ;
   padding-top: 25px;
   color: white ;
-  padding-bottom: 20rem;
+  padding-bottom: 15rem;
 }
-
+.home-about-social h1 {
+  font-size: 2.8rem;
+}
+.home-about-social p {
+  font-size: 1.3rem;
+}
 .home-about-social-links {
   justify-content: center ;
   padding-top: 15px ;
@@ -164,16 +159,16 @@
 .home-social-icons {
   position: relative ;
   display: inline-block ;
-  width: 40px ;
-  height: 40px ;
-  text-align: center ;
-  font-size: 1.2em ;
+  width: 55px;
+  height: 55px;
+  text-align: center;
+  font-size: 1.5rem;
   line-height: 2em ;
   background: rgba(255, 255, 255, 0.972) ;
   border-radius: 50% ;
   transition: 0.5s ;
 }
-
+/* 
 .home-social-icons::before {
   content: "";
   position: absolute;
@@ -186,17 +181,17 @@
   transition: 0.5s;
   transform: scale(0.9);
   z-index: -1;
-}
+} */
 
-.home-social-icons:hover::before {
-  transform: scale(1.1);
-  box-shadow: 0 0 15px #FB005B;
-}
+/* .home-social-icons:hover::before {
+  transform: scale(1.3);
+  box-shadow: 0 0 30px #FB005B;
+} */
 
 .home-social-icons:hover {
   color: #FB005B;
-  box-shadow: 0 0 5px #FB005B;
-  text-shadow: 0 0 2px #FB005B;
+  box-shadow: 0 0 30px #FB005B;
+  text-shadow: 0 0 10px #FB005B;
 }
 
 .social-icons {
@@ -207,4 +202,51 @@
 
 .icon-colour {
   color: #FB005B ;
+}
+
+
+
+@media (min-width: 767px) {
+
+  .home-section {
+    background-repeat: repeat;
+  }
+  .type {
+    width: 100%;
+    text-align: center;
+  }
+
+.Typewriter__wrapper {
+  margin: 1px;
+  position: absolute ;
+    font-size: 2.4rem ;
+    position: relative ;
+  }
+  .home-about-body {
+    padding: 0rem 5rem;
+    text-align: center;
+  }
+  .home-about-section {
+
+    height: 90vh;
+    padding: 6rem 6rem;
+  }
+  .home-about-description h1 {
+    padding: 2rem ;
+}
+.home-social-icons {
+  width: 65px;
+  height: 65px;
+  font-size: 1.8rem;
+}
+/* .home-about-social {
+  padding-bottom: 15rem;
+} */
+.home-about-social h1 {
+  font-size: 3rem;
+
+}
+.home-about-social p {
+  font-size: 1.8rem;
+}
 }

@@ -6,7 +6,7 @@ function Home2() {
   return (
     <Container fluid className="home-about-section home-section2" id="about">
       <Row>
-        <Col md={8} className="home-about-description">
+        <Col className="home-about-description">
           <h1>
             Lets<span className="purple"> Started </span> !
           </h1>

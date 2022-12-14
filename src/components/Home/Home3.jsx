@@ -7,9 +7,9 @@ import { FaLinkedinIn } from "react-icons/fa";
 const Home3 = () => {
   return (
     <Container fluid className="home-about-section home-section2" id="about">
-      <Row>
-        <Col md={12} className="home-about-social">
-          <h1>Encontrame</h1>
+      <div>
+        <div className="home-about-social">
+          <h1>ENCONTRAME</h1>
           <p>
             <span className="purple">Y ampliemos la red! </span>
           </p>
@@ -47,8 +47,8 @@ const Home3 = () => {
               </li>
             </NavLink>
           </ul>
-        </Col>
-      </Row>
+        </div>
+      </div>
     </Container>
   );
 };

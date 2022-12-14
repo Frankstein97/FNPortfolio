@@ -5,11 +5,11 @@ import Home2 from "./Home2";
 import Home3 from "./Home3";
 import Type from "./Type";
 import "./style.css";
+
 function Home() {
   return (
     <>
       <Container fluid className="home-section" id="home">
-        {/* <Container className="home-content"> */}
         <Col className="home-header">
           <h2 className="heading">
             Hola Mundo!
@@ -26,14 +26,14 @@ function Home() {
           </div>
         </Col>
 
-        <Col md={10} style={{ paddingBottom: 20, textAlign: "center" }}>
+        <div className="home-pic">
           <img
             src={homeLogo}
             alt="home pic"
             className="img-fluid"
             style={{ maxHeight: "180px", marginTop: "30px" }}
           />
-        </Col>
+        </div>
       </Container>
       <Home2 />
       <Home3 />

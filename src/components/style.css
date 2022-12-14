@@ -10,9 +10,14 @@
   
   .navbar {
     position: fixed;
-    transition: all 0.3s ease-out 0s;
-    padding: 0.3rem 2rem;   
+    transition: all 0.3s ease-out 0s; 
     border-top: 2px solid gray;
+    font-size: 1.2rem ;
+    bottom: 50px !important;
+    padding: 0.6rem 0.2em !important;
+    font-size: 1.3rem !important;
+    background-color: #000D0C !important;
+    margin-top: solid 31px red;
   }
   
   .navbar-toggler {
@@ -70,7 +75,7 @@
   @media (max-width: 767px) {
     .navbar {
       font-size: 1.2rem ;
-      bottom: 50px !important;
+      /* bottom: 50px !important; */
       padding: 0.6rem 0.2em !important;
       font-size: 1.3rem !important;
       background-color: #000D0C !important;
@@ -137,5 +142,26 @@
     border: 0px;
     border-bottom: 3px solid #268C82 ;
     max-width: 250px;
-    margin: -10px 10px 0px 15px;
+    margin: 0px 10px 0px 15px;
+    max-width: 250px;
+    color: #207373 !important;
+    }
+
+    @media (min-width: 767px) {
+
+      .navbar {
+        bottom: 0px !important;
+      }
+      .resume_button{
+        position: absolute;
+        right: 20px;
+        
+      }
+      .navbar-expand-md .navbar-collapse {
+        justify-content: space-around;
+      }
+      .navbar-nav .nav-item a {
+        margin-left: 1rem;
+      }
+
     }

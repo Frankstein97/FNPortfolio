@@ -8,13 +8,11 @@ function Type() {
       options={{
         
         strings: [
-          
           "Front_End_Developer ",
           "QA_Manual",
           "Programador_Autodidacta",
-          "Future_Back_End_Developer ",
+          "Future_Back_End_Dev ",
         ],
-        
         autoStart: true,
         loop: true,
         deleteSpeed: 50,
