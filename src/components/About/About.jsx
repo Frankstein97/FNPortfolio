@@ -57,11 +57,12 @@ function About() {
         <h2 className="project-heading">
           <strong className="purple"> SKILLS </strong>
         </h2>
+        <button class="pulse">Pulse</button>
         <ul className="icons-list">
-          <li>
+          <li className="probando">
             <img src={html} alt="html" className="icons" />
           </li>
-          <li >
+          <li>
             <img src={css} alt="css" className="icons" />
           </li>
           <li >

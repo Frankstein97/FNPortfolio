@@ -1,7 +1,10 @@
 
+
 /* --------- */
 /* Projects */
-/* --------- */
+/* ----ESTO ESTA DECLARADO ACA Y EN EL STYLE EXTERIOR----- */
+
+
   
 .project-section {
   font-size: 18px;
@@ -126,19 +129,31 @@
     font-weight: 500;
     padding-top: 10px;
   }
-
-
    .prueba{
     border-radius: 5%;
     border:solid 1px black;
     background: rgb(101,111,102);
 background: linear-gradient(122deg, rgba(101,111,102,0.9419117988992471) 8%, rgba(63,73,63,0.9531162806919643) 48%, rgba(86,93,89,1) 100%);
 }
-    .footer-card {
+.footer-card {
+  padding: 1.5rem !important;
+}
+.footer-card .button {
+   margin: 0px 10px;
+   padding: 0.4rem 0.8rem;
+}
 
-      padding: 20px !important;
-    }
-    .footer-card .button {
-       margin-left:10px;
-       margin-right:2rem
-    }
+@media (min-width: 767px) {
+
+
+  .footer-card {
+    padding: 1.5rem !important;
+  }
+  .footer-card .button {
+     margin: 0px 10px;
+     padding: 0.5rem 3rem;
+  }
+
+}
+
+
