@@ -1,5 +1,8 @@
+/* --------- */
 /* Home section */
 /* --------- */
+
+/* Este wave es el movimiento de la manito, un monton verdad? */
 
 .wave {
     animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
@@ -47,8 +50,8 @@
   url(https://img.freepik.com/vector-gratis/conjunto-iconos-nubes-blancas-dibujos-animados-aislado-azul_90220-262.jpg?w=740&t=st=1669689992~exp=1669690592~hmac=73bc1164ead75bcda0f61f167faa81a0536b5c311f1e164c7b2bcb91a83bdf7e);
   background-position: top center;
   background-repeat: no-repeat;
-  padding-bottom: 30px ;
-  padding-top: 30px ;
+  padding-bottom: 65px ;
+  padding-top: 60px ;
   background-color: #2f3c3c ;
 }
 .home-section2 {
