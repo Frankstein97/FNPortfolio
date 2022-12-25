@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
+import Button from 'react-bootstrap/Button';
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
 
@@ -10,7 +10,6 @@ function ProjectCards(props) {
       <img variant="bottom" src={props.imgPath} alt="card-img" />
       <h3> {props.title} </h3>
       <p>{props.description}</p>
-
       <Card.Footer className="footer-card">
         <Button
           variant="dark"
@@ -19,9 +18,8 @@ function ProjectCards(props) {
           className="button"
         >
           <BsGithub /> &nbsp;
-          {props.isBlog ? "Blog" : "GitHub"}
+          {"GitHub"}
         </Button>
-        {!props.isBlog && props.demoLink && (
           <Button
             variant="dark"
             className="button"
@@ -31,7 +29,6 @@ function ProjectCards(props) {
             <CgWebsite /> &nbsp;
             {"Demo"}
           </Button>
-        )}
       </Card.Footer>
     </Card>
   );

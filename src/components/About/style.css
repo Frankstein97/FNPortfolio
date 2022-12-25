@@ -1,12 +1,6 @@
 /* --------- */
 /* About */
 /* --------- */
-.pulse:hover, 
-.pulse:focus {
-  animation: pulse 1s;
-  box-shadow: 0 0 0 2em transparent;
-}
-
 .section {
   height: auto;
   padding-bottom: 3rem;

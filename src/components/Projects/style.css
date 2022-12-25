@@ -1,159 +1,104 @@
-
-
 /* --------- */
 /* Projects */
-/* ----ESTO ESTA DECLARADO ACA Y EN EL STYLE EXTERIOR----- */
+/* -------- */
 
-
-  
 .project-section {
   font-size: 18px;
-  color: white  ;
-    text-align: center;
-    position: relative;
-    padding: 2rem 1rem 5rem 1rem;
-    background-color: #2F3C3C;
-    justify-content: space-evenly;
-    /* background-image: var(--section-background-color); */
-  }
-  .project-section-row { 
-    justify-content: center;
-    padding-bottom: 10px;
-    margin: 6px;
-    padding-left: 15px;
-    padding-right: 15px;
-    
-  }
-  .project-card {
-    padding-top: 50px;
-    padding-bottom: 50px;
+  color: white;
+  text-align: center;
+  position: relative;
+  padding: 0rem 0.3rem 0rem 0.3rem;
+  background-color: #2c3333;
+  justify-content: space-evenly;
+  padding-bottom: 30px !important;
+}
+.project-section-head {
+  width: 100%;
+  height: 110vh;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  background-color: #2c3333;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  flex-direction: column;
+}
+.project-card {
+  padding-bottom: 50px;
+  height: auto;
+  padding-bottom: 50px !important;
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+  height: auto !important;
+}
 
-    height: auto;
-  }
-  .project-card-view h3{
-    padding: 1rem 0rem;
-    text-align: left;
-    color: white;
-    padding: 15px 0px 0px 15px;
+.project-card-view {
+  color: rgb(0, 0, 0);
+  background-color: #2f3c3c;
+  opacity: 0.9;
+  transition: all 0.5s ease 0s;
+  height: 100%;
+  box-shadow: #000303 1.95px 1.95px 1.6px;
+  border-radius: 10px !important;
+  box-shadow: 0 4px 5px 3px rgba(17, 142, 153, 0.459) !important;
+  color: white !important;
+  background-color: transparent !important;
+  opacity: 0.9 !important;
+  transition: all 0.5s ease 0s !important;
+  height: 100% !important;
+}
 
-  }
-  .project-card-view p{
-    color: white;
-    text-align: left;
-    padding: 5px 15px 0px 15px;
-  }
-  .project-card-view img{
-    border-radius: 10px !important;
+.project-card-view:hover {
+  transform: scale(1.02);
+  overflow: hidden;
+  box-shadow: 0 4px 4px 5px rgba(0, 0, 0, 0.689) !important;
+  transform: scale(1.02) !important;
+  overflow: hidden !important;
+  box-shadow: 0 4px 4px 5px rgba(22, 14, 62, 0.459)!important;
+}
+.project-card-view h3 {
+  padding: 1rem 0rem;
+  text-align: left;
+  color: white;
+  padding: 15px 0px 0px 15px;
+}
+.project-card-view p {
+  color: white;
+  text-align: left;
+  padding: 5px 15px 0px 15px;
+}
+.project-card-view img {
+  border-radius: 10px !important;
+}
 
-  }
-  .project-card-view {
-    /* padding: 15px 0px; */
-    /* box-shadow: 0px 2px 0px 2px rgba(255, 255, 255, 0.603) !important; */
-    color: rgb(0, 0, 0);
-    background-color: #207373!important;
-    opacity: 0.9;
-    transition: all 0.5s ease 0s;
-    height: 100%;
-    box-shadow: #000303 1.95px 1.95px 1.6px;
-    border-radius: 10px !important;
-  }
-
-  .project-card-view:hover {
-    transform: scale(1.02);
-    overflow: hidden;
-    box-shadow: 0 4px 4px 5px rgba(0, 0, 0, 0.689)!important;
-  }
-  
-  .blog-card {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 25px;
-    padding-right: 25px;
-    height: auto;
-  }
-  
-  .blog-card-view {
-    background-color: transparent;
-    box-shadow: 0 3px 3px 2px rgba(145, 77, 161, 0.459);
-    color: white;
-    transition: all 0.5s ease 0s;
-    height: 100%;
-  }
-  
-  .blog-link {
-    color: white;
-    text-decoration: none;
-  }
-  
-  .blog-link:hover {
-    cursor: pointer;
-  }
-  
-  .blog-card-view:hover {
-    transform: scale(1.02);
-    overflow: hidden;
-    box-shadow: 0 3px 3px 5px rgba(155, 88, 173, 0.65);
-  }
-  
-  .card-img-top {
-    padding: 20px;
-    opacity: 0.8;
-    border-radius: 10px;
-  }
-  
-  .blog-img {
-    padding: 0px;
-    opacity: 0.8;
-    border-radius: 0px;
-  }
-  
-  .btn-primary {
-    color: #fff;
-    background-color: #207373;
-    border-color: #207373;
-  }
-  
-  .btn-primary:hover {
-    color: rgb(0, 0, 0);
-    background-color: #FFEC10;
-    border-color: #FFEC10;
-    
-  }
-  .btn:focus {
-    outline: none;
-    box-shadow: none;
-  }
-  .project-heading {
-    color: white;
-    font-size: 2.3em;
-    font-weight: 500;
-    padding-top: 10px;
-  }
-   .prueba{
-    border-radius: 5%;
-    border:solid 1px black;
-    background: rgb(101,111,102);
-background: linear-gradient(122deg, rgba(101,111,102,0.9419117988992471) 8%, rgba(63,73,63,0.9531162806919643) 48%, rgba(86,93,89,1) 100%);
+.project-heading {
+  color: white;
+  font-size: 2.3em;
+  font-weight: 500;
+  padding-top: 10px;
+  color: white !important;
+  font-size: 2.3em !important;
+  font-weight: 500 !important;
+  padding-top: 10px !important;
 }
 .footer-card {
-  padding: 1.5rem !important;
+  padding: 1.5rem;
 }
 .footer-card .button {
-   margin: 0px 10px;
-   padding: 0.4rem 0.8rem;
+  margin: 2px 10px;
+  padding: 0.4rem 0.8rem;
 }
 
 @media (min-width: 767px) {
-
-
   .footer-card {
-    padding: 1.5rem !important;
+    padding: 1.5rem;
   }
   .footer-card .button {
-     margin: 0px 10px;
-     padding: 0.5rem 3rem;
+    margin: 5px 10px;
+    padding: 0.5rem 3rem;
   }
-
+  .project-section {
+    padding: 0rem 1rem 0rem 1rem;
+  }
 }
-
-
