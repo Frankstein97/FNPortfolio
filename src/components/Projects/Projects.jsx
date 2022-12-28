@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import { Row, Col, } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import logopatineta from "../../assets/logopatineta.gif";
 //proyects:
@@ -18,15 +18,19 @@ function Projects() {
         <h1 className="project-heading">
           MIS TRABAJOS <strong className="purple"> + RECIENTES </strong>
         </h1>
-        <p  className="text-heading">Sentite libre de espiar el código o probar las demo :)! </p>
+        <p className="text-heading">
+          Sentite libre de espiar el código o utilizar las demo de
+          <br />
+          ↓   aqui abajo ↓{" "}
+        </p>
         <div className="logobailando">
-            <img
-              src={logopatineta}
-              alt="about"
-              className="img-fluid"
-              width={"100px"}
-            />
-          </div>
+          <img
+            src={logopatineta}
+            alt="about"
+            className="img-fluid"
+            width={"100px"}
+          />
+        </div>
       </div>
       <div className="project-section">
         <Row className="project-section">

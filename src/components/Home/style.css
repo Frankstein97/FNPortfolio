@@ -46,7 +46,7 @@
   background-image: url(../../assets/backgroundclouds.webp);
   background-position: top center;
   background-repeat: no-repeat;
-  padding-bottom: 7rem;
+  padding-bottom: 9rem;
   padding-top: 1.5rem;
   background-color: #2f3c3c ;
 }
@@ -185,7 +185,7 @@
 
   .home-section {
     background-repeat: repeat;
-    padding-bottom:6rem;
+    padding-bottom:7rem;
     padding-top: 3rem;
   }
   .type {
