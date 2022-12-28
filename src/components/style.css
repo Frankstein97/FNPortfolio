@@ -1,19 +1,14 @@
-/* --------- */
-/* Navbar Section  */
+/* Navbar Section */
 /* --------- */
 
 
   .navbar {
-    /* background-color: #053d4fa9 !important; */
-    /* background-color: #53b5db37 !important; */
-          /* background-color: #000D0C !important; */
+    background-color: #000D0C;
+    opacity: 0.8;
     position: fixed;
     transition: all 0.3s ease-out 0s; 
-    /* border-top: 2px solid gray; */
     font-size: 1.2rem ;
-    padding: 0.6rem 0.2em !important;
-    font-size: 1.3rem !important;
-    /* background-color: #000D0C !important; */
+    padding: 0.6rem 0.2em ;
     margin-top: solid 31px red;
   }
   
@@ -53,12 +48,14 @@
     top: 10px ;
     transform: rotate(135deg);
     opacity: 0.9 ;
+    
   }
   
   .navbar-toggler:not(.collapsed) span:nth-child(2) {
     height: 12px ;
     visibility: hidden ;
     background-color: transparent;
+    
   }
   
   .navbar-toggler:not(.collapsed) span:nth-child(3) {
@@ -137,6 +134,15 @@
     color: #207373 !important;
     }
 
+        
+/* Esta opcion sirve para cambiar el nav */
+.sticky {
+  background-color: #000D0C;
+  transition: all 0.3s ease-out 0s ;
+  box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) ;
+  backdrop-filter: blur(15px);
+  }
+
     @media (min-width: 767px) {
 
       .navbar {
@@ -157,14 +163,5 @@
       }
 
     }
-    
-/* Esta opcion sirve para cambiar el nav */
-    .sticky {
-      /* background-color: #1b1a2ea9 !important; */
-          background-color: #000D0C !important;
 
-      transition: all 0.3s ease-out 0s !important;
-      box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
-      backdrop-filter: blur(15px) !important;
-    }
 

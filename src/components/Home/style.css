@@ -2,8 +2,6 @@
 /* Home section */
 /* --------- */
 
-/* Este wave es el movimiento de la manito, un monton verdad? */
-
 .wave {
     animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
     animation-duration: 2.1s; /* Change to speed up or slow down */
@@ -18,8 +16,7 @@
     }
     10% {
       transform: rotate(14deg);
-      
-    } /* The following five values can be played with to make the waving more or less extreme */
+    }
     20% {
       transform: rotate(-8deg);
     }
@@ -46,32 +43,29 @@
 .home-section {
   position: relative;
   z-index: -1;
-  background-image: 
-  url(https://img.freepik.com/vector-gratis/conjunto-iconos-nubes-blancas-dibujos-animados-aislado-azul_90220-262.jpg?w=740&t=st=1669689992~exp=1669690592~hmac=73bc1164ead75bcda0f61f167faa81a0536b5c311f1e164c7b2bcb91a83bdf7e);
+  background-image: url(../../assets/backgroundclouds.webp);
   background-position: top center;
   background-repeat: no-repeat;
-  padding-bottom: 65px ;
-  padding-top: 60px ;
+  padding-bottom: 3rem;
+  padding-top: 1.5rem;
   background-color: #2f3c3c ;
 }
 .home-section2 {
   position: relative;
-  /* z-index: -1103; */
   background-color: #2f3c3c ;
-  /* background-image: var(--image-gradient) url(https://i.pinimg.com/originals/d9/42/37/d94237b8bef74f4f024d93d714fc8780.png); */
   background-position: top center;
   background-repeat: no-repeat;
-  padding-bottom: 30px ;
-  padding-top: 30px ;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
   padding: 0.5rem 0 2rem ;
   color: whitesmoke;
   text-align: left;
 }
 
 .heading {
+  text-align: center;
     padding-bottom: 2rem ;
   font-size: 2.4em ;
-  /* padding-left: 50px ; */
 }
 
 .heading-name {
@@ -97,8 +91,6 @@
 }
 .Typewriter__cursor {
   display: none ;
-  /* font-size: 1.8rem ;
-  color: #268C82 ; */
 }
 
 .home-pic { padding-bottom: 20px;
@@ -171,26 +163,6 @@
   border-radius: 50% ;
   transition: 0.5s ;
 }
-/* 
-.home-social-icons::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background: #FB005B;
-  transition: 0.5s;
-  transform: scale(0.9);
-  z-index: -1;
-} */
-
-/* .home-social-icons:hover::before {
-  transform: scale(1.3);
-  box-shadow: 0 0 30px #FB005B;
-} */
-
 .home-social-icons:hover {
   color: #FB005B;
   box-shadow: 0 0 30px #FB005B;
@@ -213,6 +185,8 @@
 
   .home-section {
     background-repeat: repeat;
+    padding-bottom:6rem;
+    padding-top: 3rem;
   }
   .type {
     width: 100%;
@@ -242,9 +216,6 @@
   height: 65px;
   font-size: 1.8rem;
 }
-/* .home-about-social {
-  padding-bottom: 15rem;
-} */
 .home-about-social h1 {
   font-size: 3rem;
 

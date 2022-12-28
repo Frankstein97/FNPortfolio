@@ -2,12 +2,13 @@
 /* Contact */
 /* --------- */
 
-.formTotal {
+.contact {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #2c3333;
+  background-image: var(--image-gradient), url(../../assets/backgroundimg.jpg);
   height: 101vh;
 }
 
@@ -17,10 +18,10 @@
 .bmoFace img {
   max-height: 3rem;
 }
-.formTotal > h1 {
+.contact > h1 {
   color: white;
   font-size: 2.5rem;
-  top: 1rem;
+  top: 1.5rem;
   position: absolute;
 }
 .contact-form {
@@ -102,13 +103,14 @@
     top: 0rem;
 }
 @media (min-width: 767px) {
-  .formTotal {
+  .contact {
     height: 100vh;
   }
-  .formTotal > h1 {
+  .contact > h1 {
+    filter: drop-shadow(0 0 0.85rem #230b10);
     color: white;
     font-size: 3rem;
-    top: 1.5rem;
+    top: 2.5rem;
     position: absolute;
   }
   .contact-form {

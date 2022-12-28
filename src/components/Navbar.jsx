@@ -5,7 +5,6 @@ import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import { Link, NavLink } from "react-router-dom";
-// import { GoMarkGithub } from "react-icons/go";
 import pdf from "../assets/CV-IT Franco Nicoletti.pdf";
 import {
   AiOutlineDownload,
@@ -15,22 +14,7 @@ import {
   AiOutlineMail,
 } from "react-icons/ai";
 
-// import { CgFileDocument } from "react-icons/cg";
-
 function NavBar() {
-  // const [expand, updateExpanded] = useState(false);
-  // const [navColour, updateNavbar] = useState(false);
-
-  // function scrollHandler() {
-  //   if (window.scrollY >= 10) {
-  //     updateNavbar(true);
-  //   } else {
-  //     updateNavbar(false);
-  //   }
-  // }
-
-  // window.addEventListener("scroll", scrollHandler);
-
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
 
@@ -66,7 +50,7 @@ function NavBar() {
                 to="/about"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> Sobre
+                <AiOutlineUser style={{ marginBottom: "2px" }} /> Sobre mi
               </NavLink>
             </Nav.Item>
 
@@ -93,7 +77,7 @@ function NavBar() {
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>
-        
+
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
           onClick={() => {
@@ -104,16 +88,15 @@ function NavBar() {
           <span></span>
           <span></span>
         </Navbar.Toggle>
-          <Button
-            className="resume_button"
-            variant="Link"
-            href={pdf}
-            target="_blank"
-            
-          >
-            <AiOutlineDownload />
-            &nbsp;Resumen
-          </Button>
+        <Button
+          className="resume_button"
+          variant="Link"
+          href={pdf}
+          target="_blank"
+        >
+          <AiOutlineDownload />
+          &nbsp;Mi CV
+        </Button>
         {/* </Row> */}
       </Container>
     </Navbar>

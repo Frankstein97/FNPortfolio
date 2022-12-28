@@ -8,35 +8,31 @@ function Home2() {
       <Row>
         <Col className="home-about-description">
           <h1>
-            Lets<span className="purple"> Started </span> !
+            Let's get<span className="purple"> started </span>!
           </h1>
           <p className="home-about-body">
-            Aqui encontraras mi informacion personal asi como tambien a la
+            Aquí encontrarás mi información personal, así como también a la
             estrella de este portfolio, <b className="purple"> BMO. </b>
             <br />
             <br />
             En 2020 comencé a incursionar en el mundo de la tecnología y el
-            aprendizaje autodidacta. Realice bootcamps de{" "}
-            <b className="purple">Testing QA</b> y{" "}
+            aprendizaje autodidacta. Realicé bootcamps de {" "}
+            <b className="purple">Testing QA</b> y {" "}
             <b className="purple">FrontEnd React</b> en <b>#Coderhouse</b>, que
-            junto al opensource y a mis compañeros me ayudaron a posicionarme
-            mas fuertemente en este camino que es la programación.
-            <i>
+            junto al opensource y a mis compañerxs, me ayudaron a posicionarme
+            más fuertemente en este camino que es <i>la programación. </i>
               <br />
               <br />
-              También realice un taller trimestral de{" "}
-              <b className="purple"> Backend con TypeScript y Express</b> en
-              <b>#Puerta18</b>, lugar donde el aprendizaje es grupal y
-              presencial. Fue muy plasentero trabajar codo a codo con
-              compañerxs.
+              También realice un taller trimestral de {" "}
+              <b className="purple"> Backend </b> con <b className="purple"> TypeScript </b> y <b className="purple"> Express </b> en
+              <b> #Puerta18</b>, lugar donde el aprendizaje es grupal y
+              presencial. Fue muy placentero trabajar codo a codo con
+              compañerxs y en equipo.
               <br />
               <br />
-              Estoy esforzándome mucho por capacitarme y conseguir un trabajo de
-              desarrollador, no solo porque me divierto programando, sino porque{" "}
-              <b className="purple">
-                quiero convertir mi potencial en un oficio.
-              </b>
-            </i>
+              Estoy esforzándome en capacitarme y conseguir un trabajo de
+              desarrollador, no solo porque me divierto programando, sino porque 
+              <b className="purple"> quiero convertir mi potencial en un oficio. </b>
             <br />
             <br />
           </p>

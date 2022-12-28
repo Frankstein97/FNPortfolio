@@ -1,12 +1,10 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
 
-
 function Type() {
   return (
     <Typewriter
       options={{
-        
         strings: [
           "Front_End_Developer ",
           "QA_Manual",

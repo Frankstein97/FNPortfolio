@@ -34,18 +34,16 @@ const Home3 = () => {
                 <FaLinkedinIn />
               </a>
             </li>
-            <NavLink as={Link} to="/contact">
-              <li className="social-icons">
-                <a
-                  href="https://www.instagram.com/soumyajit4419"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour home-social-icons"
-                >
-                  <AiOutlineMail />
-                </a>
-              </li>
-            </NavLink>
+            <li className="social-icons">
+              <NavLink
+                className="icon-colour home-social-icons"
+                as={Link}
+                to="/contact"
+              >
+                {" "}
+                <AiOutlineMail />
+              </NavLink>
+            </li>
           </ul>
         </div>
       </div>

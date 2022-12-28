@@ -3,6 +3,7 @@ import "./style.css";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
 import bmoFace from "../../assets/bmoface.gif";
+
 const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
@@ -28,7 +29,8 @@ const Contact = () => {
     e.target.reset();
   };
   return (
-    <div className="formTotal">
+   
+    <div className="contact">
       <h1>
         CONTACT<span className="purple">AME!</span>
       </h1>
@@ -45,7 +47,7 @@ const Contact = () => {
                 required
                 type="text"
                 id="name"
-                placeholder="Me decis tu nombre?"
+                placeholder="Me decís tu nombre?"
               ></input>{" "}
             </label>
           </div>
@@ -57,7 +59,7 @@ const Contact = () => {
                 required
                 type="text"
                 id="email"
-                placeholder="Asi puedo responderte"
+                placeholder="Así puedo responderte"
               ></input>
             </label>
           </div>
