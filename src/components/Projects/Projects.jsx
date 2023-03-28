@@ -4,6 +4,7 @@ import { Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import logopatineta from "../../assets/logopatineta.gif";
 //proyects:
+import deroma from "../../assets/proyects/deroma.gif";
 import cafeapp from "../../assets/proyects/cafeapp.gif";
 import homebanking from "../../assets/proyects/homebanking.gif";
 import puzzle from "../../assets/proyects/puzzle.gif";
@@ -20,8 +21,7 @@ function Projects() {
         </h1>
         <p className="text-heading">
           Sentite libre de espiar el código o utilizar las demo de
-          <br />
-          ↓   aqui abajo ↓{" "}
+          <br />↓ aqui abajo ↓{" "}
         </p>
         <div className="logobailando">
           <img
@@ -34,6 +34,19 @@ function Projects() {
       </div>
       <div className="project-section">
         <Row className="project-section">
+          <Col md={5} className="project-card">
+            <ProjectCard
+              imgPath={deroma}
+              isBlog={false}
+              title="DeRoma Deco"
+              description="Uno de los beneficios del Top10 de Coderhouse es participar de un proyecto real con otros estudiantes. 
+              Luego de varias reuniones con las dueñas del emprendimiento armamos una landing-page que funcione como catálogo,
+              Este fue mi primer proyecto grupal en el que no tuve que pensar el diseño, cuyos desafíos fueron negociar mis limites, adaptarse y buscar mucho en internet! "
+              ghLink="https://github.com/nicoarias47/de_roma"
+              demoLink="https://de-roma.web.app/#/"
+            />
+          </Col>
+
           <Col md={5} className="project-card">
             <ProjectCard
               imgPath={cafeapp}
